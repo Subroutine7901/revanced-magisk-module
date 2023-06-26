@@ -6,8 +6,8 @@ build-mindetach-module = true
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 [YouTube]
-build-mode = "both"                                                   # 'both', 'apk' or 'module'
-excluded-patches = ""                                                 # space-seperated patches to exclude (multiline strings are not supported)
+build-mode = "apk"                                                   # 'both', 'apk' or 'module'
+excluded-patches = "bypass-ambient-mode-restrictions change-homepage custom-branding-icon-afn-blue custom-branding-icon-afn-red custom-branding-icon-mmt custom-branding-icon-revancify-blue custom-branding-icon-revancify-red custom-package-name custom-seekbar-color disable-haptic-feedback disable-hdr-video disable-landscape-mode disable-quic-protocol enable-old-quality-layout enable-tablet-miniplayer enable-tablet-navigation-bar enable-wide-searchbar hide-account-menu hide-captions-button hide-endscreen-cards hide-info-cards hide-seekbar hide-snack-bar hide-time-stamp hide-tooltip-content layout-switch materialyou spoof-app-version theme"                                                 # space-seperated patches to exclude (multiline strings are not supported)
 included-patches = ""                                                 # space-seperated patches to include (non-excluded patches are included by default)
 version = "auto"                                                      # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
 exclusive-patches = false                                             # excludes all patches by default and only applies included-patches
@@ -23,8 +23,8 @@ build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 
 [Music]
-build-mode = "both"
-excluded-patches = ""
+build-mode = "apk"
+excluded-patches = "amoled certificate-spoof custom-branding-music-afn-blue custom-branding-music-afn-red custom-branding-music-mmt custom-branding-music-revancify-blue custom-branding-music-revancify-red custom-package-name hide-new-playlist-button spoof-app-version"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 arch = "both"
 
@@ -92,5 +92,5 @@ enabled = false
 apkmirror-dlurl = "https://www.apkmirror.com/apk/joaomgcd/tasker/"
 
 [Photomath]
-enabled = false
+enabled = true
 apkmonk-dlurl = "https://www.apkmonk.com/app/com.microblink.photomath/"
